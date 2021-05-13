@@ -34,7 +34,7 @@ function eng() {
 function generate(answer) {
   return `
     <div class="card" style="width: 18rem;">
-    <img src="assets/2933820.svg" class="card-img-top" alt="engineer_image"> <p class="card-text">Engineer</p>
+    <img src="assets/images/engineer.png" class="card-img-top" alt="engineer_image"> <p class="card-text">Engineer</p>
     <h5 class="card-title">${answer.engineerName}</h5>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">${answer.engineerID}</li>

@@ -34,7 +34,7 @@ function int() {
 function generate(answer) {
   return `
     <div class="card" style="width: 18rem;">
-  <img src="assets/2972288.svg" class="card-img-top" alt="intern_image"> <p class="card-text">Intern</p>
+  <img src="assets/images/intern.png" class="card-img-top" alt="intern_image"> <p class="card-text">Intern</p>
     <h5 class="card-title">${answer.internName}</h5>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">${answer.internID}</li>
