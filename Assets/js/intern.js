@@ -28,3 +28,24 @@ const internQ = [
     choices: ["Engineer", "Intern", "No more members"],
   },
 ];
+function int() {
+  return inquirer.prompt(internQ);
+}
+function generate(answer) {
+  return `
+    <div class="card" style="width: 18rem;">
+  <img src="assets/2972288.svg" class="card-img-top" alt="intern_image"> <p class="card-text">Intern</p>
+    <h5 class="card-title">${answer.internName}</h5>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">${answer.internID}</li>
+    <li class="list-group-item">${answer.internEmail}</li>
+    <li class="list-group-item">${answer.internSch}</li>
+    </ul>
+  </div>
+      `;
+}
+
+module.exports = {
+  int,
+  generate,
+};
