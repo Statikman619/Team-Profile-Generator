@@ -27,3 +27,28 @@ const questions = [
     choices: ["Engineer", "Intern", "No more members"],
   },
 ];
+// make async and await then run other function
+function ask() {
+  return inquirer.prompt(questions);
+}
+function generate(answer) {
+  return `
+       <div class="card" style="width: 18rem;">
+  <img src="assets/download.png" class="card-img-top" alt="...">
+  <div class="card-body">
+  <p class="card-text">MANAGER</p>
+  </div>
+  <h5 class="card-title">${answer.managerName}</h5>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">${answer.managerID}</li>
+    <li class="list-group-item">${answer.managerEmail}</li>
+    <li class="list-group-item">${answer.managerNum}s</li>
+  </ul>
+  </div>
+  `;
+}
+
+module.exports = {
+  ask,
+  generate,
+};
