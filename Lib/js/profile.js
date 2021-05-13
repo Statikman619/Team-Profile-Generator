@@ -3,10 +3,10 @@ const inquirer = require("inquirer");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
 const writeToFile = util.promisify(fs.appendFile);
-const manager = require("./Lib/manager");
-const engineer = require("./Lib/engineer");
-const intern = require("./Lib/intern");
-const start = require("./Lib/init");
+const manager = require("./Lib/js/manager");
+const engineer = require("./Lib/js/engineer");
+const intern = require("./Lib/js/intern");
+const start = require("./Lib/js/init");
 //const path = require("path")
 
 var managers = [];
