@@ -42,7 +42,7 @@ function generate(answer) {
   <ul class="list-group list-group-flush">
     <li class="list-group-item">${answer.managerID}</li>
     <li class="list-group-item">${answer.managerEmail}</li>
-    <li class="list-group-item">${answer.managerNum}s</li>
+    <li class="list-group-item">${answer.managerNum}</li>
   </ul>
   </div>
   `;

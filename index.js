@@ -12,7 +12,7 @@ const start = require("./Lib/init");
 
 var managers = [];
 var engineers = [];
-var employee = [];
+var employees = [];
 var interns = [];
 
 async function init() {
