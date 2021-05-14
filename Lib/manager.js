@@ -34,7 +34,7 @@ function ask() {
 function generate(answer) {
   return `
        <div class="card" style="width: 18rem;">
-  <img src="assets/images/manager.png" class="card-img-top" alt="...">
+  <img src="assets/images/manager.png" class="card-img-top" alt="Manager-Image"> <p class="card-text">Manager</p>
   <div class="card-body">
   <p class="card-text">MANAGER</p>
   </div>

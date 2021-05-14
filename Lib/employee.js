@@ -3,18 +3,18 @@ inquirer = require("inquirer");
 const employeeQ = [
   {
     type: "input",
-    name: "engineerName",
-    message: "What is your engineer's name?",
+    name: "employeeName",
+    message: "What is your employee's name?",
   },
   {
     type: "input",
-    name: "engineerID",
-    message: "What is your engineer's id number?",
+    name: "employeeID",
+    message: "What is your employee's id number?",
   },
   {
     type: "input",
-    name: "engineerEmail",
-    message: "What is your engineer's email?",
+    name: "employeeEmail",
+    message: "What is your employee's email?",
   },
 ];
 function eng() {
@@ -23,11 +23,11 @@ function eng() {
 function generate(answer) {
   return `
     <div class="card" style="width: 18rem;">
-    <img src="assets/images/engineer.png" class="card-img-top" alt="engineer_image"> <p class="card-text">Engineer</p>
-    <h5 class="card-title">${answer.engineerName}</h5>
+    <img src="assets/images/employee.png" class="card-img-top" alt="employee-image"> <p class="card-text">Employee</p>
+    <h5 class="card-title">${answer.employeeName}</h5>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">${answer.engineerID}</li>
-    <li class="list-group-item">${answer.engineerEmail}</li>
+    <li class="list-group-item">${answer.employeeID}</li>
+    <li class="list-group-item">${answer.employeeEmail}</li>
     </div>  
     `;
 }
