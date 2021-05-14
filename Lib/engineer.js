@@ -1,3 +1,5 @@
+const engineer = require("../Classes/Engineer");
+
 inquirer = require("inquirer");
 
 const engineerQ = [
@@ -32,14 +34,20 @@ function eng() {
   return inquirer.prompt(engineerQ);
 }
 function generate(answer) {
+  const engineer = new Engineer(
+    answer.engineerName,
+    answer.engineerID,
+    answer.engineerEmail,
+    answer.engineerGithub
+  );
   return `
     <div class="card" style="width: 18rem;">
     <img src="assets/images/engineer.png" class="card-img-top" alt="engineer_image"> <p class="card-text">Engineer</p>
-    <h5 class="card-title">${answer.engineerName}</h5>
+    <h5 class="card-title">${engineer.getName()}</h5>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">${answer.engineerID}</li>
-    <li class="list-group-item">${answer.engineerEmail}</li>
-    <li class="list-group-item">${answer.engineerGit}</li>
+    <li class="list-group-item">${engineer.getID()}</li>
+    <li class="list-group-item">${engineer.getEmail()}</li>
+    <li class="list-group-item">${engineer.Github()}</li>
     </ul>
     </div>  
     `;

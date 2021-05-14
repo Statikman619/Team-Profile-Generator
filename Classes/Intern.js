@@ -1,3 +1,5 @@
+const manager = require("../Classes/Intern");
+
 const Employee = require("./Employee");
 const Intern = require("./Intern");
 

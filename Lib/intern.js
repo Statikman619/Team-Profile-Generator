@@ -32,14 +32,20 @@ function int() {
   return inquirer.prompt(internQ);
 }
 function generate(answer) {
+  const intern = new Intern(
+    answer.InternName,
+    answer.InternID,
+    answer.InternEmail,
+    answer.InternSchool
+  );
   return `
     <div class="card" style="width: 18rem;">
   <img src="assets/images/intern.png" class="card-img-top" alt="intern-image"> <p class="card-text">Intern</p>
-    <h5 class="card-title">${answer.internName}</h5>
+    <h5 class="card-title">${intern.getName()}</h5>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">${answer.internID}</li>
-    <li class="list-group-item">${answer.internEmail}</li>
-    <li class="list-group-item">${answer.internSch}</li>
+    <li class="list-group-item">${intern.getID()}</li>
+    <li class="list-group-item">${intern.getEmail()}</li>
+    <li class="list-group-item">${intern.getSchool()}</li>
     </ul>
   </div>
       `;

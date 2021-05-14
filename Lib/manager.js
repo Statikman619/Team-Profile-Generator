@@ -1,3 +1,4 @@
+const manager = require("../Classes/Manager");
 inquirer = require("inquirer");
 const questions = [
   {
@@ -32,17 +33,23 @@ function ask() {
   return inquirer.prompt(questions);
 }
 function generate(answer) {
+  const manager = new Manager(
+    answer.managerName,
+    answer.managerID,
+    answer.managerEmail,
+    answer.managerNum
+  );
   return `
        <div class="card" style="width: 18rem;">
   <img src="assets/images/manager.png" class="card-img-top" alt="Manager-Image"> <p class="card-text">Manager</p>
   <div class="card-body">
   <p class="card-text">MANAGER</p>
   </div>
-  <h5 class="card-title">${answer.managerName}</h5>
+  <h5 class="card-title">${manager.getName()}</h5>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">${answer.managerID}</li>
-    <li class="list-group-item">${answer.managerEmail}</li>
-    <li class="list-group-item">${answer.managerNum}</li>
+    <li class="list-group-item">${manager.getId()}</li>
+    <li class="list-group-item">${manager.getEmail()}</li>
+    <li class="list-group-item">${manager.getOfficeNumber()}</li>
   </ul>
   </div>
   `;
