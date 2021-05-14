@@ -5,12 +5,14 @@ const writeFileAsync = util.promisify(fs.writeFile);
 const writeToFile = util.promisify(fs.appendFile);
 const manager = require("./Lib/manager");
 const engineer = require("./Lib/engineer");
+const employee = require("./Lib/employee");
 const intern = require("./Lib/intern");
 const start = require("./Lib/init");
 //const path = require("path")
 
 var managers = [];
 var engineers = [];
+var employee = [];
 var interns = [];
 
 async function init() {
@@ -20,12 +22,22 @@ async function init() {
     data = manager.generate(answer);
     managers.push(data);
 
-    if (answer.addEmp === "Engineer" || answer.addEmp === "Intern") {
+    if (
+      answer.addEmp === "Engineer" ||
+      answer.addEmp === "Employee" ||
+      answer.addEmp === "Intern"
+    ) {
       for (var i = 2; i > 1; i++) {
         if (answer.addEmp === "Engineer") {
           var answer = await engineer.eng();
           data = engineer.generate(answer);
           engineers.push(data);
+        } else if (answer.addEmp === "Employee") {
+          var answer = await Employee.int();
+          data = intern.generate(answer);
+          console.log(data);
+          console.log(typeof data);
+          Employee.push(data);
         } else if (answer.addEmp === "Intern") {
           var answer = await intern.int();
           data = intern.generate(answer);
@@ -33,7 +45,7 @@ async function init() {
           console.log(typeof data);
           interns.push(data);
         } else {
-          var employees = managers.concat(engineers, interns);
+          var employees = managers.concat(engineers, employee, interns);
           var team = employees.join(" ");
           console.log(team);
 
