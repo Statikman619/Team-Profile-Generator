@@ -1,4 +1,4 @@
-const manager = require("../Classes/Intern");
+const manager = require("./Employee");
 
 const Employee = require("./Employee");
 const Intern = require("./Intern");

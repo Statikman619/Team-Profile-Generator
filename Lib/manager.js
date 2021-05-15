@@ -47,7 +47,7 @@ function generate(answer) {
   </div>
   <h5 class="card-title">${manager.getName()}</h5>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">${manager.getId()}</li>
+    <li class="list-group-item">${manager.getID()}</li>
     <li class="list-group-item">${manager.getEmail()}</li>
     <li class="list-group-item">${manager.getOfficeNumber()}</li>
   </ul>

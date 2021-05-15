@@ -1,4 +1,4 @@
-const engineer = require("../Classes/Engineer");
+const Engineer = require("../Classes/Engineer");
 
 inquirer = require("inquirer");
 
@@ -20,7 +20,7 @@ const engineerQ = [
   },
   {
     type: "input",
-    name: "engineerGit",
+    name: "engineerGithub",
     message: "What is your engineer's GitHub username?",
   },
   {
@@ -47,7 +47,7 @@ function generate(answer) {
   <ul class="list-group list-group-flush">
     <li class="list-group-item">${engineer.getID()}</li>
     <li class="list-group-item">${engineer.getEmail()}</li>
-    <li class="list-group-item">${engineer.Github()}</li>
+    <li class="list-group-item">${engineer.getGit()}</li>
     </ul>
     </div>  
     `;
