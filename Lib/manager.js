@@ -1,4 +1,4 @@
-const manager = require("../Classes/Manager");
+const Manager = require("../Classes/Manager");
 inquirer = require("inquirer");
 const questions = [
   {

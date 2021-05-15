@@ -22,40 +22,33 @@ async function init() {
     data = manager.generate(answer);
     managers.push(data);
 
-    if (
-      answer.addEmp === "Engineer" ||
-      answer.addEmp === "Employee" ||
-      answer.addEmp === "Intern"
-    ) {
-      for (var i = 2; i > 1; i++) {
-        if (answer.addEmp === "Engineer") {
-          var answer = await engineer.eng();
-          data = engineer.generate(answer);
-          engineers.push(data);
-        } else if (answer.addEmp === "Employee") {
-          var answer = await Employee.int();
-          data = intern.generate(answer);
-          console.log(data);
-          console.log(typeof data);
-          Employee.push(data);
-        } else if (answer.addEmp === "Intern") {
-          var answer = await intern.int();
-          data = intern.generate(answer);
-          console.log(data);
-          console.log(typeof data);
-          interns.push(data);
-        } else {
-          var employees = managers.concat(engineers, employee, interns);
-          var team = employees.join(" ");
-          console.log(team);
+    for (var i = 2; i > 1; i++) {
+      if (answer.addEmp === "Engineer") {
+        var answer = await engineer.eng();
+        data = engineer.generate(answer);
+        engineers.push(data);
+      } else if (answer.addEmp === "Employee") {
+        var answer = await Employee.int();
+        data = intern.generate(answer);
+        console.log(data);
+        console.log(typeof data);
+        Employee.push(data);
+      } else if (answer.addEmp === "Intern") {
+        var answer = await intern.int();
+        data = intern.generate(answer);
+        console.log(data);
+        console.log(typeof data);
+        interns.push(data);
+      } else {
+        var employees = managers.concat(engineers, interns);
+        var team = employees.join(" ");
+        console.log(team);
 
-          var teamList = await start.list(team);
-          await writeFileAsync("team.html", teamList);
-          return;
-        }
+        var teamList = await start.list(team);
+        await writeFileAsync("team.html", teamList);
+        console.log(teamList);
+        return;
       }
-    } else {
-      //Print manager html only
     }
   } catch (err) {
     console.log(err);
