@@ -1,5 +1,8 @@
 # Team Profile Generator
 
+*GithubLink https://github.com/Statikman619/Team-Profile-Generator/tree/main
+*WalkThroughVideoLink
+
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Table of Contents
 * [Title](#Title)
