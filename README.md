@@ -1,7 +1,7 @@
 # Team Profile Generator
 
-*GithubLink https://github.com/Statikman619/Team-Profile-Generator/tree/main
-*WalkThroughVideoLink
+*githublink https://github.com/Statikman619/Team-Profile-Generator
+*videolink 
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Table of Contents
@@ -29,6 +29,3 @@ run "node index.js" in the command line of your terminal.
 Contact me:
 Github:[Statikman619](https://github.com/Statikman619)
 Email:[martinez.michael02@gmail.com](https://github.com/Statikman619)
-
-
-![Screenshot 2021-05-15 140420](https://user-images.githubusercontent.com/73040685/118378151-8a91fb00-b586-11eb-93c0-12fd26d6ff70.png)
