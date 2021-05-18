@@ -30,14 +30,11 @@ async function init() {
       } else if (answer.addEmp === "Employee") {
         var answer = await Employee.int();
         data = intern.generate(answer);
-        console.log(data);
-        console.log(typeof data);
         Employee.push(data);
       } else if (answer.addEmp === "Intern") {
         var answer = await intern.int();
         data = intern.generate(answer);
-        console.log(data);
-        console.log(typeof data);
+        console.log(answer);
         interns.push(data);
       } else {
         var employees = managers.concat(engineers, interns);

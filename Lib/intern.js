@@ -1,3 +1,4 @@
+const Intern = require("../Classes/Intern");
 inquirer = require("inquirer");
 
 const internQ = [
@@ -33,10 +34,10 @@ function int() {
 }
 function generate(answer) {
   const intern = new Intern(
-    answer.InternName,
-    answer.InternID,
-    answer.InternEmail,
-    answer.InternSchool
+    answer.internName,
+    answer.internID,
+    answer.internEmail,
+    answer.internSch
   );
   return `
     <div class="card" style="width: 18rem;">
