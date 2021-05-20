@@ -7,6 +7,6 @@ describe("EngineerTest", () => {
     expect(employee.name).toBe("mike");
     expect(employee.id).toBe(28);
     expect(employee.email).toBe("mike@gmail.com");
-    expect(employee.github).toBe("mikem");
+    expect(employee.git).toBe("mikem");
   });
 });
