@@ -8,4 +8,11 @@ describe("EmployeeTest", () => {
     expect(employee.id).toBe(28);
     expect(employee.email).toBe("mike@gmail.com");
   });
+  it("returns correct employee values with methods", () => {
+    const employee = new Employee("mike", 28, "mike@gmail.com");
+    expect(employee.getName()).toBe("mike");
+    expect(employee.getID()).toBe(28);
+    expect(employee.getEmail()).toBe("mike@gmail.com");
+    expect(employee.getRole()).toBe("Employee");
+  });
 });

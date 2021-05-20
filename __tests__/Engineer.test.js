@@ -9,4 +9,10 @@ describe("EngineerTest", () => {
     expect(employee.email).toBe("mike@gmail.com");
     expect(employee.git).toBe("mikem");
   });
+  it("returns correct employee values with methods", () => {
+    const employee = new Engineer("mike", 28, "mike@gmail.com", "mikem");
+    expect(employee.getName()).toBe("mike");
+    expect(employee.getRole()).toBe("Engineer");
+    expect(employee.getGit()).toBe("mikem");
+  });
 });
