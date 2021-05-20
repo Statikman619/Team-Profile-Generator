@@ -1,7 +1,7 @@
 # Team Profile Generator
 
 *githublink https://github.com/Statikman619/Team-Profile-Generator
-*videolink https://drive.google.com/file/d/11Dedu8QWj1aBOA0hVmilNgGCHUFMI_9w/view
+*videolink https://drive.google.com/file/d/1-hkCHxAQWF62iDX_N9ZlvBjGqmgDJxK5/view
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Table of Contents
