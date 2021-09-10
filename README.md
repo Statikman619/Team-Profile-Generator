@@ -17,7 +17,8 @@
 ## Description
 My project allows you to choose from various employee's (Manager, Engineer or Intern) to create a team of your choosing.
 ## Installation 
-npm install -y and npm i inquierer in the command line. After run "node infex.js".
+Clone this repository to receive all my files. Once you have my code make sure you are in the correct file directory.
+in the command line run "npm install" in the terminal to download all the needed dependencies.".
 ## Usage 
 When you want to create a team you get a series of questions asking you what type of employee you're trying to add to your team. Follow the prompts to help guide  you in creating your team.
 ## License MIT
